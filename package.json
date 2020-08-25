@@ -1,6 +1,6 @@
 {
   "name": "ts-to-jsonschema",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Converts TS interfaces to JSONSchema for use with react-jsonschema-form.",
   "repository": {
     "type": "git",
