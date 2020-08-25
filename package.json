@@ -1,15 +1,14 @@
 {
-  "name": "@reggi/node-generate",
-  "version": "1.0.7",
-  "description": "This is a starter project for TypeScript and Node.js",
+  "name": "ts-to-jsonschema",
+  "version": "0.0.1",
+  "description": "Converts TS interfaces to JSONSchema for use with react-jsonschema-form.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reggi/node-generate.git"
+    "url": "https://github.com/reggi/node-ts-to-jsonschema.git"
   },
   "license": "ISC",
   "author": "Thomas Reggi",
   "main": "./build/mod.js",
-  "bin": "./build/mod_cli.js",
   "scripts": {
     "build": "rm -rf ./build/ && tsc",
     "coverage:open": "open ./coverage/index.html",
@@ -17,7 +16,6 @@
     "lint:fix": "gts fix",
     "open:coverage": "npm run coverage:open",
     "require-check": "require-check ./",
-    "shebang-check": "shebang-check ./package.json",
     "sortme": "npx sort-package-json",
     "test": "mocha -t 4000 -r ts-node/register \"src/**/*_test.ts\"",
     "test:coverage": "npm run test:coverage-html && npm run open:coverage",
@@ -39,10 +37,9 @@
     "mocha": "^8.1.1",
     "nyc": "^15.1.0",
     "require-check": "^1.0.2",
-    "shebang-check": "^1.0.5",
     "sinon": "^9.0.2",
     "ts-node": "^8.10.2",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "engines": {
     "node": ">=11.14.0"

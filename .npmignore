@@ -11,3 +11,5 @@ coverage
 .github
 examples
 snapshots
+*_test.ts
+spec.json

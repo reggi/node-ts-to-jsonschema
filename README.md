@@ -1,20 +1,13 @@
-# node-generate
+# node-ts-to-jsonschema
 
-[![semantic release](https://github.com/reggi/node-generate/workflows/semantic%20release/badge.svg)](https://github.com/reggi/node-generate/actions?query=workflow%3A%22semantic+release%22) [![coverage](https://github.com/reggi/node-generate/workflows/coverage/badge.svg)](https://reggi.github.io/node-generate/) [![npm](https://badge.fury.io/js/%40reggi%2Fnode-generate.svg)](https://www.npmjs.com/package/@reggi/node-generate)
+[![semantic release](https://github.com/reggi/node-ts-to-jsonschema/workflows/semantic%20release/badge.svg)](https://github.com/reggi/node-ts-to-jsonschema/actions?query=workflow%3A%22semantic+release%22) [![coverage](https://github.com/reggi/node-ts-to-jsonschema/workflows/coverage/badge.svg)](https://reggi.github.io/node-ts-to-jsonschema/) [![npm](https://badge.fury.io/js/ts-to-jsonschema.svg)](https://www.npmjs.com/package/ts-to-jsonschema)
 
-This is a starter project for TypeScript and Node.js
+Converts TS interfaces to JSONSchema for use with react-jsonschema-form.
 
 ## Install
 
 ```
-npm install @reggi/node-generate -g
-node-generate
-```
-
-## Use directly via `npx`
-
-```
-npx @reggi/node-generate
+npm install ts-to-jsonschema
 ```
 
 <!-- anything below this line will be safe from template removal -->

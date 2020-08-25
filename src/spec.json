@@ -1,0 +1,353 @@
+{
+  "EMPTY": {
+    "code": [],
+    "result": {
+      "properties": {}
+    }
+  },
+  "COMMENT": {
+    "code": [
+      "interface Options {",
+      "  /** something cool */",
+      "  key: boolean;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "boolean",
+              "description": "something cool"
+            }
+          }
+        }
+      }
+    }
+  },
+  "DEFAULT_BOOL": {
+    "code": [
+      "interface Options {",
+      "  /** @default true */",
+      "  key: boolean;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "DEFAULT_BOOL_COMMENT": {
+    "code": [
+      "interface Options {",
+      "  /** @default true something cool */",
+      "  key: boolean;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "boolean",
+              "default": true,
+              "description": "something cool"
+            }
+          }
+        }
+      }
+    }
+  },
+  "DEFAULT_STRING_DQ": {
+    "code": [
+      "interface Options {",
+      "  /** @default \"thing\" */",
+      "  key: string;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "string",
+              "default": "thing"
+            }
+          }
+        }
+      }
+    }
+  },
+  "DEFAULT_STRING_COMMENT_DQ": {
+    "code": [
+      "interface Options {",
+      "  /** @default \"thing\" something cool */",
+      "  key: string;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "string",
+              "default": "thing",
+              "description": "something cool"
+            }
+          }
+        }
+      }
+    }
+  },
+  "DEFAULT_STRING_SQ": {
+    "code": [
+      "interface Options {",
+      "  /** @default 'thing' */",
+      "  key: string;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "string",
+              "default": "thing"
+            }
+          }
+        }
+      }
+    }
+  },
+  "DEFAULT_STRING_COMMENT_SQ": {
+    "code": [
+      "interface Options {",
+      "  /** @default 'thing' something cool */",
+      "  key: string;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "string",
+              "default": "thing",
+              "description": "something cool"
+            }
+          }
+        }
+      }
+    }
+  },
+  "BLOCK_COMMENT": {
+    "code": [
+      "interface Options {",
+      "/**",
+      " * something cool",
+      " */",
+      "  key: boolean;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "boolean",
+              "description": "something cool"
+            }
+          }
+        }
+      }
+    }
+  },
+  "BLOCK_DEFAULT_BOOL": {
+    "code": [
+      "interface Options {",
+      "/**",
+      " * @default true ",
+      " */",
+      "  key: boolean;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "BLOCK_DEFAULT_BOOL_COMMENT": {
+    "code": [
+      "interface Options {",
+      "/**",
+      " * something cool",
+      " * @default true ",
+      " */",
+      "  key: boolean;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "boolean",
+              "default": true,
+              "description": "something cool"
+            }
+          }
+        }
+      }
+    }
+  },
+  "BLOCK_DEFAULT_STRING_DQ": {
+    "code": [
+      "interface Options {",
+      "/**",
+      " * @default \"thing\" ",
+      " */",
+      "  key: string;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "string",
+              "default": "thing"
+            }
+          }
+        }
+      }
+    }
+  },
+  "BLOCK_DEFAULT_STRING_COMMENT_DQ": {
+    "code": [
+      "interface Options {",
+      "/**",
+      " * something cool",
+      " * @default \"thing\" ",
+      " */",
+      "  key: string;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "string",
+              "default": "thing",
+              "description": "something cool"
+            }
+          }
+        }
+      }
+    }
+  },
+  "BLOCK_DEFAULT_STRING_SQ": {
+    "code": [
+      "interface Options {",
+      "/**",
+      " * @default 'thing' ",
+      " */",
+      "  key: string;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "string",
+              "default": "thing"
+            }
+          }
+        }
+      }
+    }
+  },
+  "BLOCK_DEFAULT_STRING_COMMENT_SQ": {
+    "code": [
+      "interface Options {",
+      "/**",
+      " * something cool",
+      " * @default 'thing' ",
+      " */",
+      "  key: string;",
+      "}"
+    ],
+    "result": {
+      "properties": {
+        "options": {
+          "title": "Options",
+          "type": "object",
+          "properties": {
+            "key": {
+              "title": "Key",
+              "type": "string",
+              "default": "thing",
+              "description": "something cool"
+            }
+          }
+        }
+      }
+    }
+  }
+}
